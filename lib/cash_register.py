@@ -16,8 +16,9 @@ class CashRegister:
     self.last_transaction = price * quantity
     # (self.items).append(title)
     # return self.items
-    i = 0
+    
     for i in range(quantity):
+      i = 0
       (self.items).append(title)
     # return self.items
 
@@ -35,7 +36,6 @@ class CashRegister:
 
 flatiron = CashRegister(discount=10)
 
-flatiron.add_item("cereal", 12, 1)
-flatiron.add_item("milk", 2, 1)
-flatiron.add_item("milk", 2, 1)
+flatiron.add_item("cereal", 12, 2)
+flatiron.add_item("milk", 2, 3)
 print(flatiron.items)
